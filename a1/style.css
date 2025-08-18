@@ -2,13 +2,13 @@
 
 :root {
   --col01: rgb(33, 33, 33);
-  --col02: rgb(254, 162, 50);
+  --col02: #ffa441;
   --col03: rgb(72, 201, 76);
+  --col04: #4596ff;
 }
 
 * {
   font-family: "Montserrat", sans-serif;
-  color: var(--col01);
 }
 
 body {
@@ -24,25 +24,22 @@ header {
   font-size: 2.5rem;
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
-  font-weight: 600;
+  font-weight: 900;
   border-bottom-style: solid;
 }
 
 .orngTxt {
   color: var(--col02);
-  font-size: 1.25rem;
+  font-size: 0.9rem;
 }
 
 .grnTxt {
   color: var(--col03);
+  font-size: 0.9rem;
 }
 
-h3 {
-  color: var(--col03);
-}
-
-p {
-  color: var(--col02);
+.sect0cont {
+  padding-bottom: 1rem;
 }
 
 .sect1cont {
@@ -50,8 +47,92 @@ p {
   gap: 4rem;
   align-items: center;
   justify-content: center;
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+  border-style: solid;
+  border-color: var(--col02);
+  border-radius: 1rem;
+  margin: 1.25rem;
 }
 
 .sect1item {
   max-width: 60ch;
+}
+
+.sect2cont {
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 4rem;
+  align-items: center;
+  justify-content: center;
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+  border-style: solid;
+  border-color: var(--col03);
+  border-radius: 1rem;
+  margin: 1.25rem;
+}
+
+.sect2item {
+  max-width: 60ch;
+}
+
+.sect3cont {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+  border-style: solid;
+  border-color: var(--col02);
+  border-radius: 1rem;
+  margin: 1.25rem;
+}
+
+.sect3item {
+  max-width: 125ch;
+}
+
+.sect4cont {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+  border-style: solid;
+  border-color: var(--col03);
+  border-radius: 1rem;
+  margin: 1.25rem;
+}
+
+.sect4item {
+  max-width: 125ch;
+}
+
+.sect5cont {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+  border-style: solid;
+  border-color: var(--col02);
+  border-radius: 1rem;
+  margin: 1.25rem;
+  gap: 4rem;
+}
+
+.sect5item {
+  max-width: 60ch;
+}
+
+footer {
+  margin-top: 2rem;
+  border-top-style: solid;
+  color: var(--col02);
+  text-align: center;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
