@@ -19,12 +19,13 @@ videoElement.addEventListener("canplay", updateTotalTime);
 function updateTotalTime() {
   let videoSeconds = videoElement.duration;
   let totalMin = Math.floor(videoSeconds / 60);
-  let totalSeconds = videoSeconds % 60;
+  let totalSeconds = Math.floor(videoSeconds % 60);
   if (totalSeconds < 10) {
     totalSeconds = "0" + totalSeconds;
   }
   totalTimeText.textContent = `${totalMin}:${totalSeconds}`;
   console.log(videoElement.duration);
+  console.log(totalSeconds);
 }
 
 /*

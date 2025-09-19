@@ -37,13 +37,24 @@
         <!-- media player controls -->
         <div class="mediaPlayerControlCont">
           <button id="playPauseButton">
-            ▶
-            <!-- ⏸ -->
+            <img
+              src="assets/play-icon.png"
+              alt="play icon"
+              id="playPauseIcon"
+            />
           </button>
           <progress id="timelineProgress" max="100" value="0"></progress>
+          <!-- adding in a time feedback section: let users know how long the video is and its current time -->
+          <p class="timeCont">
+            <span id="currentTimeFeedback">0:00</span>
+            /
+            <span id="totalTimeFeedback"></span>
+          </p>
         </div>
       </section>
     </main>
+
+    <button id="helloButton">Hello</button>
 
     <footer>
       <p>&copy; 2024 Media Player Website. All rights reserved.</p>
