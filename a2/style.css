@@ -1,42 +1,39 @@
 :root {
-  --col01: white;
-  --col02: black;
-  --col03: cornflowerblue;
-  --col04: coral;
-  --border: solid coral 2px;
+  --col01: #272635;
+  --col02: white;
+  --col03: #028090;
+  --col04: #00a896;
 }
 
 body {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
+  text-align: center;
   line-height: 1.6;
-  background-color: var(--col03);
-  color: var(--col01);
+  background-color: var(--col01);
+  color: var(--col02);
   gap: 1rem;
 }
 
-h1 {
+header {
   font-size: 2rem;
+  color: var(--col03);
 }
 
-nav {
-  border: var(--border);
-  padding: 1rem;
-}
-
-footer {
+/* footer {
   border: var(--border);
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
-}
+} */
 
 main {
   max-width: 1000px;
   width: 100%;
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
+  gap: 4rem;
+  padding-left: 6rem;
 }
 
 .mediaPlayerSection {
@@ -45,6 +42,7 @@ main {
 }
 
 #mediaPlayer {
+  width: 800px;
   max-width: 100%;
 }
 
@@ -65,9 +63,13 @@ main {
   flex: 1;
 }
 
-.mainCont {
+.buttonCont {
   display: flex;
-  align-content: center;
-  justify-content: center;
-  gap: 4rem;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.highlight {
+  color: #00a896;
 }
