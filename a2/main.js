@@ -32,8 +32,6 @@ function updateTotalTime() {
     totalSeconds = "0" + totalSeconds;
   }
   totalTimeText.textContent = `${totalMin}:${totalSeconds}`;
-  console.log(videoElement.duration);
-  console.log(totalSeconds);
 }
 
 /*
@@ -149,7 +147,6 @@ videoElement.addEventListener("timeupdate", changeColour);
 function changeColour() {
   let currentSeconds = Math.floor(videoElement.currentTime);
   parseInt(currentSeconds);
-  console.log(currentSeconds);
   if (currentSeconds >= 2 && currentSeconds <= 27) {
     introButton.classList.add("highlight");
     step1Button.classList.remove("highlight");
