@@ -48,12 +48,10 @@ cursor change on hover
 function playPause() {
   if (videoElement.paused || videoElement.ended) {
     videoElement.play();
-    playPauseIcon.src = "assets/pause-icon.png";
-    playPauseIcon.alt = "pause icon";
+    playPauseButton.textContent = "⏸";
   } else {
     videoElement.pause();
-    playPauseIcon.src = "assets/play-icon.png";
-    playPauseIcon.alt = "play icon";
+    playPauseButton.textContent = "▶";
   }
 }
 
@@ -235,8 +233,3 @@ function changeColour() {
     step7Button.classList.remove("highlight");
   }
 }
-
-// classList.add() adds class
-// classList.remove() removes class
-// classList.toggle() toggles class
-// introButton.classList.remove("highlight");

@@ -1,8 +1,15 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
 :root {
-  --col01: #272635;
-  --col02: white;
-  --col03: #028090;
-  --col04: #00a896;
+  --col01: #a2bffe;
+  --col02: #f4f9e9;
+  --col03: #7dc0e5;
+  --col04: #5cb8e9;
 }
 
 body {
@@ -11,29 +18,25 @@ body {
   background-color: var(--col01);
   color: var(--col02);
   gap: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
 }
 
 header {
-  font-size: 2rem;
-  color: var(--col03);
+  font-size: 4rem;
+  color: var(--col02);
+  font-weight: 700;
 }
 
-/* footer {
-  border: var(--border);
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-} */
-
 main {
-  max-width: 1000px;
+  max-width: 1300px;
   width: 100%;
   display: flex;
   align-content: center;
-  justify-content: space-between;
-  gap: 4rem;
-  padding-left: 6rem;
+  justify-content: center;
+  gap: 5rem;
 }
 
 .mediaPlayerSection {
@@ -42,7 +45,7 @@ main {
 }
 
 #mediaPlayer {
-  width: 800px;
+  width: 1000px;
   max-width: 100%;
 }
 
@@ -54,13 +57,9 @@ main {
   margin-top: 1rem;
 }
 
-#playPauseButton {
-  padding: 1rem;
-  cursor: pointer;
-}
-
 #timelineProgress {
   flex: 1;
+  cursor: pointer;
 }
 
 .buttonCont {
@@ -71,5 +70,31 @@ main {
 }
 
 .highlight {
-  color: #00a896;
+  background-color: #00a896;
+}
+
+button {
+  width: 100%;
+  cursor: pointer;
+  height: 100%;
+  border: none;
+  border-bottom-style: solid;
+  border-bottom-color: var(--col02);
+  border-top-style: solid;
+  border-top-color: var(--col02);
+  width: 500px;
+  background-color: var(--col01);
+  font-size: 1.5rem;
+}
+
+#playPauseButton {
+  padding: 1rem;
+  width: 75px;
+  height: 75px;
+  border: none;
+}
+
+footer {
+  text-align: center;
+  margin-top: 2.6rem;
 }
