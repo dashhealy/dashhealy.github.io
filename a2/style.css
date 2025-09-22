@@ -6,8 +6,8 @@
   font-style: normal;
 }
 :root {
-  --col01: #a2bffe;
-  --col02: #f4f9e9;
+  --col01: rgb(143, 190, 229);
+  --col02: #eff4e5;
   --col03: #7dc0e5;
   --col04: #5cb8e9;
 }
@@ -21,13 +21,16 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 3rem;
+  gap: 2rem;
+  border: var(--col02) solid;
+  border-width: 1rem;
 }
 
 header {
   font-size: 4rem;
   color: var(--col02);
   font-weight: 700;
+  margin-top: 0.75rem;
 }
 
 main {
@@ -70,7 +73,7 @@ main {
 }
 
 .highlight {
-  background-color: #00a896;
+  background-color: var(--col04);
 }
 
 button {
@@ -91,10 +94,17 @@ button {
   padding: 1rem;
   width: 75px;
   height: 75px;
-  border: none;
+  border: var(--col02) solid;
+  background-color: var(--col04);
+  border-radius: 5rem;
 }
 
 footer {
   text-align: center;
-  margin-top: 2.6rem;
+  font-weight: 700;
+  margin-top: 2rem;
+}
+
+a {
+  color: rgb(115, 56, 209);
 }
