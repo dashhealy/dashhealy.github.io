@@ -4,7 +4,12 @@
   font-family: "Raleway", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
+  font-weight: 600;
 }
+
+/* For this site, I've chosen, bright, readable , more child friendly colours to account for the likely young */
+/* audience this site would have. These colours are friendly, appealing to the eye, and unify various elements of the */
+/* page, making it feel far more complete to users */
 :root {
   --col01: rgb(143, 190, 229);
   --col02: #eff4e5;
@@ -30,7 +35,7 @@ header {
   font-size: 4rem;
   color: var(--col02);
   font-weight: 700;
-  margin-top: 0.75rem;
+  margin-top: 0.5rem;
 }
 
 main {
@@ -82,12 +87,16 @@ button {
   height: 100%;
   border: none;
   border-bottom-style: solid;
+  border-width: 2px;
   border-bottom-color: var(--col02);
-  border-top-style: solid;
-  border-top-color: var(--col02);
   width: 500px;
   background-color: var(--col01);
   font-size: 1.5rem;
+}
+
+#introButton {
+  border-top-style: solid;
+  border-top-color: var(--col02);
 }
 
 #playPauseButton {

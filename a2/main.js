@@ -1,12 +1,10 @@
-/*
-find the elements i want to interact with
-*/
+// finding required page elements
 const videoElement = document.querySelector("#mediaPlayer");
 const playPauseButton = document.querySelector("#playPauseButton");
 const playPauseIcon = document.querySelector("#playPauseIcon");
 const timeline = document.querySelector("#timelineProgress");
 const currentTimeText = document.querySelector("#currentTimeFeedback");
-const totalTimeText = document.querySelector("#totalTimeFeedback");
+// const totalTimeText = document.querySelector("#totalTimeFeedback");
 
 const introButton = document.querySelector("#introButton");
 const step1Button = document.querySelector("#step1Button");
@@ -17,32 +15,26 @@ const step5Button = document.querySelector("#step5Button");
 const step6Button = document.querySelector("#step6Button");
 const step7Button = document.querySelector("#step7Button");
 
-/* when js loads remove defaul controls */
 videoElement.removeAttribute("controls");
 
-// I want to update total time based on the currently loaded media file
-// this will run when page loads but if i wanted to change the file afterwards I'd have to update there too
-videoElement.addEventListener("canplay", updateTotalTime);
+// tell users the total length of the video
+// I've commented out this code as it is no longer needed
 
-function updateTotalTime() {
-  let videoSeconds = videoElement.duration;
-  let totalMin = Math.floor(videoSeconds / 60);
-  let totalSeconds = Math.floor(videoSeconds % 60);
-  if (totalSeconds < 10) {
-    totalSeconds = "0" + totalSeconds;
-  }
-  totalTimeText.textContent = `${totalMin}:${totalSeconds}`;
-}
+// videoElement.addEventListener("canplay", updateTotalTime);
 
-/*
-Play pause button behaviour:
-if media is not playing - when i click begins playback of the media file
-if media is playing - when i click again it pauses the playback of the media file
-Feedback:
-toggle icon based on playing state
-cursor change on hover
-*/
+// function updateTotalTime() {
+//   let videoSeconds = videoElement.duration;
+//   let totalMin = Math.floor(videoSeconds / 60);
+//   let totalSeconds = Math.floor(videoSeconds % 60);
+//   if (totalSeconds < 10) {
+//     totalSeconds = "0" + totalSeconds;
+//   }
+//   totalTimeText.textContent = `${totalMin}:${totalSeconds}`;
+// }
 
+// controls to pause and play tutorial
+// I've chosen to use unicode icons instead of the pictures shown to us in the demonstrations, as these are easier
+// to change using CSS, including elements like colour and size, which are harder to modify in an image.
 function playPause() {
   if (videoElement.paused || videoElement.ended) {
     videoElement.play();
@@ -55,12 +47,7 @@ function playPause() {
 
 playPauseButton.addEventListener("click", playPause);
 
-/*
-Timeline behaviour:
-it should playback as media playback occurs to show current time
-i should be able to click and jump to particular time
-*/
-
+// show users how far into the video they are
 function updateTimeline() {
   //   find percentage of total time
   let timePercent = (videoElement.currentTime / videoElement.duration) * 100;
@@ -71,6 +58,7 @@ function updateTimeline() {
 
 videoElement.addEventListener("timeupdate", updateTimeline);
 
+// Show users how far into the video they are using seconds and minutes
 function updateCurrentTime() {
   let videoSeconds = videoElement.currentTime;
   let totalMin = Math.floor(videoSeconds / 60);
@@ -83,6 +71,7 @@ function updateCurrentTime() {
 
 timeline.addEventListener("click", jumpToTime);
 
+// allow users to jump to a certain time in the video depending on where they clicked
 function jumpToTime(ev) {
   // find how far from the left we clicked
   let clickX = ev.offsetX;
@@ -94,6 +83,12 @@ function jumpToTime(ev) {
   videoElement.currentTime = videoElement.duration * clickPercent;
 }
 
+// Often when following tutorials online, I easily get lost, espectially when creators don't timestamp thier
+// videos. As such, I want to implement a simillar system into this site in order to make the easier to follow
+// guide easier to follow for younger audiences.
+// Here, each button (when clicked) will take you to a different part of the video, corresponding to the step
+// you've clicked. This breaks the video down into more managable chunks, that viewers can easily repeat and revisit
+// when confused, lost, or just in need of clarificaiton.
 introButton.addEventListener("click", introTime);
 
 function introTime() {
@@ -142,8 +137,15 @@ function step7Time() {
   videoElement.currentTime = 240;
 }
 
+// when the time on the video updates, check if change in colour is needed
 videoElement.addEventListener("timeupdate", changeColour);
 
+// After implementing the previous feature, I realised that, without clicking on one of the buttons, there wasn't
+// A way to know which step you were up to. So, of course, I addressed this issue by having the site highlight which
+// step you were up to. This immediately remedied this issue, as the website now clearly hightlights where you are in
+// the video, helping users to, again, break the video down into smaller parts and make it easier to follow.
+// This has the added bonus of making where you jump to in the video much clearer when using the timeline, as when
+// paused, users can clearly see where they are and what step they're on.
 function changeColour() {
   let currentSeconds = Math.floor(videoElement.currentTime);
   parseInt(currentSeconds);

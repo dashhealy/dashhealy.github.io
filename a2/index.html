@@ -10,13 +10,12 @@
     <title>ID A2</title>
   </head>
   <body>
-    <!-- this is my page heading -->
+    <!-- Apt page title to immediately convey what the page is -->
     <header>How to Make a Windmill</header>
 
-    <!-- this is my main -->
     <main>
       <div>
-        <!-- this is my media player section -->
+        <!-- section containing video and its controls -->
         <section class="mediaPlayerSection">
           <video id="mediaPlayer" controls>
             <source
@@ -29,16 +28,27 @@
           <div class="mediaPlayerControlCont">
             <button id="playPauseButton">▶</button>
             <progress id="timelineProgress" max="100" value="0"></progress>
-            <!-- adding in a time feedback section: let users know how long the video is and its current time -->
+            <!-- timeline to display how far into video users are, but to also allow them to jump to different parts -->
+            <!-- depending on where they click -->
             <p class="timeCont">
               <span id="currentTimeFeedback">0:00</span>
               /
-              <span id="totalTimeFeedback"></span>
+              <!-- Instead of using code to find the length of the video, I've instead just typed in the length -->
+              <!-- This was because sometimes the site just wouldn't run properly, and leave this black, resulting -->
+              <!-- in this display just reading "0:00 / ", which obviously, is not ideal, especially if an actual -->
+              <!-- user were to encounter this issue and not know how to fix it -->
+              <span id="totalTimeFeedback">4:35</span>
             </p>
           </div>
         </section>
       </div>
 
+      <!-- For this assignment, I've decided to add these buttons, which will contain a couple interactive and -->
+      <!-- functional attributes, with these, I want to make the actual tutorial itself clearer and easier to follow -->
+      <!-- by breaking down the tutorial into clear sections. -->
+      <!-- My two main ideas are to allow users to skip to different parts of the tutorial by clicking on these -->
+      <!-- buttons, but also having them change colour and highlight themselves in order to indicate to users what part -->
+      <!-- of the tutorial they're up to, again, making the video easier to follow. -->
       <div class="buttonCont">
         <button id="introButton">Introduction and Materials</button>
         <button id="step1Button">Step 1</button>
@@ -51,6 +61,7 @@
       </div>
     </main>
 
+    <!-- Attributions to follow copywright laws and assignment guidelines. -->
     <footer>
       <p class="attribution">
         "<a
