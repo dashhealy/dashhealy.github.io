@@ -81,6 +81,11 @@ main {
   background-color: var(--col04);
 }
 
+/* I've added the "cursor: pointer;" property to all interactive elements, such as the timeline and buttons. */
+/* I did this as, without them, users may not be aware that you can click these elements, which sounds obvious, */
+/* however when showing people my site, they weren't aware you could click on the buttons on the right, as they */
+/* blend into the background. This remedies this issue, as users will now see their cursor change when they hover */
+/* these UI elements. */
 button {
   width: 100%;
   cursor: pointer;
