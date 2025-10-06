@@ -60,6 +60,29 @@ button:hover {
   /* transition: translate 0.8s ease-out rotate 0.8s ease scale 0.8s ease; */
 }
 
+.ball:hover {
+  animation: colourShift 4s linear infinite forwards;
+}
+
+@keyframes colourShift {
+  0% {
+    background-color: purple;
+  }
+  25% {
+    background-color: blue;
+  }
+  30% {
+    background-color: red;
+  }
+  75% {
+    background-color: orange;
+  }
+  100% {
+    background-color: purple;
+    transform: rotate(360deg);
+  }
+}
+
 .controls {
   display: flex;
   justify-content: space-between;
@@ -68,4 +91,10 @@ button:hover {
 
 .moveright {
   translate: 50px 0px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ball:hover {
+    animation: none;
+  }
 }
