@@ -15,8 +15,11 @@ body {
   padding-top: 1rem;
 }
 .imgCont img {
-  max-width: 275px;
-  max-height: 275px;
+  max-width: 200px;
+  max-height: 200px;
+}
+.imgCont img:hover {
+  scale: 1.1;
 }
 
 .bodyCont {
@@ -34,18 +37,15 @@ body {
 .bodyCont img {
   max-width: 700px;
   max-height: 480px;
-}
-
-#starryNightBig {
   grid-row: 1 / span 3;
   grid-column: 1;
   justify-self: center;
   opacity: 0;
 }
-#birthOfVenusBig {
-  grid-row: 1 / span 3;
-  grid-column: 1;
-  justify-self: center;
+
+.bodyCont div {
+  grid-row: 2;
+  grid-column: 2;
   opacity: 0;
 }
 
