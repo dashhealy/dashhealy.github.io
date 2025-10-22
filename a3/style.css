@@ -1,0 +1,78 @@
+body {
+  background-color: rgb(31, 31, 31);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.imgCont {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  gap: 2rem;
+  padding-top: 1rem;
+}
+.imgCont img {
+  max-width: 275px;
+  max-height: 275px;
+}
+
+.bodyCont {
+  display: grid;
+  align-self: center;
+  max-width: 1400px;
+  max-height: 700px;
+  width: 1400px;
+  height: 450px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 0.5rem;
+}
+
+.bodyCont img {
+  max-width: 700px;
+  max-height: 480px;
+}
+
+#starryNightBig {
+  grid-row: 1 / span 3;
+  grid-column: 1;
+  justify-self: center;
+  opacity: 0;
+}
+#birthOfVenusBig {
+  grid-row: 1 / span 3;
+  grid-column: 1;
+  justify-self: center;
+  opacity: 0;
+}
+
+.animateIn {
+  animation: fadeIn 0.5s ease-in forwards;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    /* translate: 10px; */
+  }
+}
+
+.animateOut {
+  animation: fadeOut 0.5s ease-in forwards;
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    /* translate: 10px; */
+  }
+}
