@@ -57,6 +57,11 @@ starryNightSmall.addEventListener("mouseleave", function () {
   starryNightText.classList.remove("animateIn");
 });
 
+// Currently, when hovering over an element while their respective sound file is still playing results
+// in the sound not playing again, but instead requiring the sound file have completed playing before another
+// instance of it can be played again. Fixing this issue currently falls outside of the scope of this assignment,
+// as it seems to just be one of the limitations of htmlMediaElement. However with more time/ a larger scope,
+// this issue could be fixed and improved.
 // Birth of venus
 birthOfVenusSmall.addEventListener("mouseover", function () {
   spotlight.classList.remove("lightAnimateOut");
@@ -77,6 +82,11 @@ birthOfVenusSmall.addEventListener("mouseleave", function () {
   birthOfVenusText.classList.remove("animateIn");
 });
 
+// While the use of anonymous functions is fine, I do wish I was able to use two functions for all the fade ins
+// and outs. I experimented with this idea, attempting to dynamically create element names, however it seems
+// ".addEventListener" doesn't seem to allow for variable names to be read, rather than what is currently being
+// used. In future and with more time, someone much smarter than me could fix this issue and come up with a
+// solution, however I am not that smart, and will leave it the way it is for now.
 // guernica
 guernicaSmall.addEventListener("mouseover", function () {
   spotlight.classList.remove("lightAnimateOut");
