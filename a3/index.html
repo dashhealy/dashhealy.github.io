@@ -8,6 +8,18 @@
     <title>Hover Gallery</title>
   </head>
   <body>
+    <!-- Declaring audio for html -->
+    <!-- When creating this website, this was the last feature I added. When designing this site I've been
+    really focusing on making it feel complete and robust. With this last assignment I want to create something
+    that I'm really happy with, and push myself to do more with this simple concept. This mentality has led
+    to me layering element on element,function on function in order to create what I believe is quite an adept
+    little prototype. -->
+    <!-- Since the context for this site is gallery, with the artworks I've selected focusing on classical, or at
+     least older art, these piano sounds make the site feel a little more "classy", adding an element of 
+     sophistication that the site previously lacked.  Ignoring the aesthetic benefits of this feature, by adding
+     this I've made the hover feature far more engaging. By playing the sound, animation and changing the size
+     of the small picture upon hovering, this action feels more customised and relavent to the site, allowing me
+     to prove why I've selected it as my chosen action. -->
     <audio id="sound1">
       <source src="sound1.mp3" type="audio/mpeg" />
     </audio>
@@ -21,6 +33,10 @@
       <source src="sound4.mp3" type="audio/mpeg" />
     </audio>
 
+    <!-- Dialog window -->
+    <!-- Since the site now uses an audio element, I've added a dialog window to prevent errors and allow sounds
+     to play when the user hovers over them, as previously, sounds wouldn't play as the user hadn't interacted with
+     an element yet -->
     <dialog id="introDialog">
       <p>
         This website will play sounds. <br />
@@ -29,6 +45,7 @@
       <button id="dialogCloseButton" autofocus>ENTER THE GALLERY</button>
     </dialog>
 
+    <!-- div that contains all of the images in the top row -->
     <div class="imgCont">
       <img src="theKiss.jpg" alt="theKiss" class="theKissSmall" />
       <img src="guernica.jpg" alt="guernica" class="guernicaSmall" />
@@ -40,10 +57,25 @@
       />
     </div>
 
+    <!-- div that contains all main images and text elements -->
     <div class="bodyCont">
+      <!-- spotlight image that appears below all artworks -->
+      <!-- I've added this graphic as, in combination with the background, it provides
+        a sense of place and grounds the UI, again, connecting to the chosen context (a gallery site that allows
+        users to view and read about artworks as if they're there). -->
       <img src="spotlight.png" alt="spotlight" id="spotlight" />
 
+      <!-- Starry night -->
+      <!-- text and image sourced from wikipedia, https://en.wikipedia.org/wiki/The_Starry_Night -->
       <img src="starryNight.jpg" id="starryNightBig" />
+      <!-- When deciding what information to include on the site, I have decided to follow the formatting of
+       art gallery plaques. This includes things like the order of elements, size and the stylisation of the 
+       titles. Since this site is intended to be for a gallery, allowing users to look at art online as if they
+       were there in person, I want to convey that feeling of walking up to works and reading the small plaque
+       next to them. This extends into the colour and font used. The grey gradient and border are intended to
+       look shiny or even metal, as art gallery plaques tend to be on shiny acrylic or metal. The seriff type used
+       (much like the use of grand piano sounds) not only aligns with typical plaque formatting, but also further
+       converys a sense of class or refinement, typical of the art world. -->
       <div class="starryNightText">
         <h1>
           Vincent Van Gogh <br />
@@ -76,6 +108,8 @@
         </p>
       </div>
 
+      <!-- The Birth of Venus -->
+      <!-- image and text sourced from wikipedia, https://en.wikipedia.org/wiki/The_Birth_of_Venus -->
       <img src="birthOfVenus.jpg" id="birthOfVenusBig" />
       <div class="birthOfVenusText">
         <h1>Sandro Botticelli <br /><i>The Birth of Venus</i>, 1484-1489</h1>
@@ -100,6 +134,8 @@
         </p>
       </div>
 
+      <!-- Guernica -->
+      <!-- image and text sourced from wikipedia, https://en.wikipedia.org/wiki/Guernica_(Picasso) -->
       <img src="guernica.jpg" id="guernicaBig" />
       <div class="guernicaText">
         <h1>Pablo Picasso <br /><i>Guernica</i>, 1937</h1>
@@ -127,6 +163,8 @@
         </p>
       </div>
 
+      <!-- The Kiss -->
+      <!-- image and text sourced from wikipedia, https://en.wikipedia.org/wiki/The_Kiss_(Klimt) -->
       <img src="theKiss.jpg" id="theKissBig" />
       <div class="theKissText">
         <h1>Gustav Klimt<br /><i>The Kiss</i>, 1907-1908</h1>

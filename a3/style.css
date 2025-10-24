@@ -1,3 +1,6 @@
+/* The background of the site was custom made for a few rasons. Though primarily, it provides a setting for the 
+site, which, along with the simplified versions of the artworks on the walls, makes the user feel more as though
+theyre in an actual gallery. I also used this image as I wanted to avoid another empty background for my site. */
 body {
   background-image: url(backgroundImg.png);
   background-repeat: no-repeat;
@@ -41,6 +44,9 @@ dialog::backdrop {
   border-radius: 0.2rem;
 }
 
+/* Rather than using another flat colour in the design for the background of this element, I've instead opted
+to make it mostly transparent. This provides a frame for the small images while still allowing visual elements
+behind them to show through, making the UI of the site feel less like a bunch of flat boxes. */
 .imgCont {
   display: flex;
   gap: 3.5rem;
@@ -97,6 +103,10 @@ dialog::backdrop {
   margin-top: 3rem;
 }
 
+/* Using gradiants such as these throughout the site, or even varying the colours of borders to provide a
+sense of light direction is important in making the site feel less flat. A bad habit I have when designing 
+anything is relying too heavily on flat colours. These usually make my site look ameteurish and boring. As such,
+these slight gradients are amazing for providing visual variation and texture to my UI. */
 .bodyCont div {
   grid-row: 2;
   grid-column: 2;
@@ -128,6 +138,13 @@ h1 {
   transform: translateY(-15px);
 }
 
+/* When creating this site, it was important to me that it felt alive, active and complete. As such, these
+animations are important, as they really help in accomplishing that feeling. I've layerd both a change in
+opacity and position, rather than just opacity (what I had previously planned to do), as this again provides
+the elements on the site more life, and makes the hover action feel more significant, changing more and doing
+more. On top of all of this, I've slowed the animation to be a second long. As i state in the intro dialog, I
+want users to take their time and slow down to read and appreciate the works on the site. By slowing the animation
+used, I hope that users will subconciously do the same. */
 .animateIn {
   animation: fadeIn 1s ease-in forwards;
 }
@@ -158,6 +175,10 @@ h1 {
   }
 }
 
+/* I'm using different animations for the spotlight as I want to provide variation in the visuals of the site.
+I've change how long it takes and when the light fades in/ out, as well as fixing it's position. Previously,
+the spotlight texture moved with the other graphics, however this felt unnatural and ruined the "sense of place"
+I was trying to build. */
 .lightAnimateIn {
   animation: lightFadeIn 0.25s ease-in forwards;
 }

@@ -1,23 +1,29 @@
+// Decalring elements
+// Starry night
 const starryNightSmall = document.querySelector(".starryNightSmall");
 const starryNightBig = document.querySelector("#starryNightBig");
 const starryNightText = document.querySelector(".starryNightText");
 let sound1 = document.querySelector("#sound1");
 
+// Birth of Venus
 const birthOfVenusSmall = document.querySelector(".birthOfVenusSmall");
 const birthOfVenusBig = document.querySelector("#birthOfVenusBig");
 const birthOfVenusText = document.querySelector(".birthOfVenusText");
 let sound2 = document.querySelector("#sound2");
 
+// Guernica
 const guernicaSmall = document.querySelector(".guernicaSmall");
 const guernicaBig = document.querySelector("#guernicaBig");
 const guernicaText = document.querySelector(".guernicaText");
 let sound3 = document.querySelector("#sound3");
 
+// The Kiss
 const theKissSmall = document.querySelector(".theKissSmall");
 const theKissBig = document.querySelector("#theKissBig");
 const theKissText = document.querySelector(".theKissText");
 let sound4 = document.querySelector("#sound4");
 
+// Spotlight
 const spotlight = document.querySelector("#spotlight");
 
 // Dialog window
@@ -29,6 +35,8 @@ document.getElementById("dialogCloseButton").addEventListener("click", () => {
   introModal.close();
 });
 
+// For this assignment, since I'm using a series of very simple, single use functions,
+// I've opted to make them anonymous, rather than calling and declaring functions
 // Starry night
 starryNightSmall.addEventListener("mouseover", function () {
   spotlight.classList.remove("lightAnimateOut");
