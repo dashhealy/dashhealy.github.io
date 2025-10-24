@@ -91,12 +91,3 @@ theKissSmall.addEventListener("mouseleave", function () {
   theKissText.classList.add("animateOut");
   theKissText.classList.remove("animateIn");
 });
-
-// function starryAnimIn() {
-//   fadeIn("starryNight");
-// }
-
-// function fadeIn(name) {
-//   let big = `${name}Big`;
-//   big.classList.add("animateIn");
-// }
