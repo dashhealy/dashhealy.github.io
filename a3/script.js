@@ -18,8 +18,8 @@ const spotlight = document.querySelector("#spotlight");
 
 // Starry night
 starryNightSmall.addEventListener("mouseover", function () {
-  spotlight.classList.remove("animateOut");
-  spotlight.classList.add("animateIn");
+  spotlight.classList.remove("lightAnimateOut");
+  spotlight.classList.add("lightAnimateIn");
   starryNightBig.classList.remove("animateOut");
   starryNightBig.classList.add("animateIn");
   starryNightText.classList.remove("animateOut");
@@ -27,8 +27,8 @@ starryNightSmall.addEventListener("mouseover", function () {
 });
 
 starryNightSmall.addEventListener("mouseleave", function () {
-  spotlight.classList.add("animateOut");
-  spotlight.classList.remove("animateIn");
+  spotlight.classList.add("lightAnimateOut");
+  spotlight.classList.remove("lightAnimateIn");
   starryNightBig.classList.add("animateOut");
   starryNightBig.classList.remove("animateIn");
   starryNightText.classList.add("animateOut");
@@ -37,8 +37,8 @@ starryNightSmall.addEventListener("mouseleave", function () {
 
 // Birth of venus
 birthOfVenusSmall.addEventListener("mouseover", function () {
-  spotlight.classList.remove("animateOut");
-  spotlight.classList.add("animateIn");
+  spotlight.classList.remove("lightAnimateOut");
+  spotlight.classList.add("lightAnimateIn");
   birthOfVenusBig.classList.remove("animateOut");
   birthOfVenusBig.classList.add("animateIn");
   birthOfVenusText.classList.remove("animateOut");
@@ -46,8 +46,8 @@ birthOfVenusSmall.addEventListener("mouseover", function () {
 });
 
 birthOfVenusSmall.addEventListener("mouseleave", function () {
-  spotlight.classList.add("animateOut");
-  spotlight.classList.remove("animateIn");
+  spotlight.classList.add("lightAnimateOut");
+  spotlight.classList.remove("lightAnimateIn");
   birthOfVenusBig.classList.add("animateOut");
   birthOfVenusBig.classList.remove("animateIn");
   birthOfVenusText.classList.add("animateOut");
@@ -56,8 +56,8 @@ birthOfVenusSmall.addEventListener("mouseleave", function () {
 
 // guernica
 guernicaSmall.addEventListener("mouseover", function () {
-  spotlight.classList.remove("animateOut");
-  spotlight.classList.add("animateIn");
+  spotlight.classList.remove("lightAnimateOut");
+  spotlight.classList.add("lightAnimateIn");
   guernicaBig.classList.remove("animateOut");
   guernicaBig.classList.add("animateIn");
   guernicaText.classList.remove("animateOut");
@@ -65,8 +65,8 @@ guernicaSmall.addEventListener("mouseover", function () {
 });
 
 guernicaSmall.addEventListener("mouseleave", function () {
-  spotlight.classList.add("animateOut");
-  spotlight.classList.remove("animateIn");
+  spotlight.classList.add("lightAnimateOut");
+  spotlight.classList.remove("lightAnimateIn");
   guernicaBig.classList.add("animateOut");
   guernicaBig.classList.remove("animateIn");
   guernicaText.classList.add("animateOut");
@@ -75,8 +75,8 @@ guernicaSmall.addEventListener("mouseleave", function () {
 
 // The Kiss
 theKissSmall.addEventListener("mouseover", function () {
-  spotlight.classList.remove("animateOut");
-  spotlight.classList.add("animateIn");
+  spotlight.classList.remove("lightAnimateOut");
+  spotlight.classList.add("lightAnimateIn");
   theKissBig.classList.remove("animateOut");
   theKissBig.classList.add("animateIn");
   theKissText.classList.remove("animateOut");
@@ -84,8 +84,8 @@ theKissSmall.addEventListener("mouseover", function () {
 });
 
 theKissSmall.addEventListener("mouseleave", function () {
-  spotlight.classList.add("animateOut");
-  spotlight.classList.remove("animateIn");
+  spotlight.classList.add("lightAnimateOut");
+  spotlight.classList.remove("lightAnimateIn");
   theKissBig.classList.add("animateOut");
   theKissBig.classList.remove("animateIn");
   theKissText.classList.add("animateOut");
