@@ -94,7 +94,7 @@ h1 {
 }
 
 .animateIn {
-  animation: fadeIn 0.5s ease-in forwards;
+  animation: fadeIn 1s ease-in forwards;
 }
 
 @keyframes fadeIn {
@@ -109,7 +109,7 @@ h1 {
 }
 
 .animateOut {
-  animation: fadeOut 0.5s ease-in forwards;
+  animation: fadeOut 1s ease-in forwards;
 }
 
 @keyframes fadeOut {
@@ -137,7 +137,7 @@ h1 {
 }
 
 .lightAnimateOut {
-  animation: lightFadeOut 0.75s ease-in forwards;
+  animation: lightFadeOut 1.25s ease-in forwards;
 }
 
 @keyframes lightFadeOut {
