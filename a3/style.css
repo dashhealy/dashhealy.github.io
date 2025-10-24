@@ -13,11 +13,13 @@ body {
 
 .imgCont {
   display: flex;
+  gap: 4rem;
+  padding-top: 1rem;
+  background-color: rgb(116, 116, 116);
+  width: 1000px;
   align-items: center;
   text-align: center;
   justify-content: center;
-  gap: 4rem;
-  padding-top: 1rem;
 }
 .imgCont img {
   max-width: 150px;
