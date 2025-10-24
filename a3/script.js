@@ -20,6 +20,15 @@ let sound4 = document.querySelector("#sound4");
 
 const spotlight = document.querySelector("#spotlight");
 
+// Dialog window
+let introModal = document.getElementById("introDialog");
+
+document.getElementById("introDialog").showModal();
+
+document.getElementById("dialogCloseButton").addEventListener("click", () => {
+  introModal.close();
+});
+
 // Starry night
 starryNightSmall.addEventListener("mouseover", function () {
   spotlight.classList.remove("lightAnimateOut");
