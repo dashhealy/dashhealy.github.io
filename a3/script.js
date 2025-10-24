@@ -1,18 +1,22 @@
 const starryNightSmall = document.querySelector(".starryNightSmall");
 const starryNightBig = document.querySelector("#starryNightBig");
 const starryNightText = document.querySelector(".starryNightText");
+let sound1 = document.querySelector("#sound1");
 
 const birthOfVenusSmall = document.querySelector(".birthOfVenusSmall");
 const birthOfVenusBig = document.querySelector("#birthOfVenusBig");
 const birthOfVenusText = document.querySelector(".birthOfVenusText");
+let sound2 = document.querySelector("#sound2");
 
 const guernicaSmall = document.querySelector(".guernicaSmall");
 const guernicaBig = document.querySelector("#guernicaBig");
 const guernicaText = document.querySelector(".guernicaText");
+let sound3 = document.querySelector("#sound3");
 
 const theKissSmall = document.querySelector(".theKissSmall");
 const theKissBig = document.querySelector("#theKissBig");
 const theKissText = document.querySelector(".theKissText");
+let sound4 = document.querySelector("#sound4");
 
 const spotlight = document.querySelector("#spotlight");
 
@@ -24,6 +28,7 @@ starryNightSmall.addEventListener("mouseover", function () {
   starryNightBig.classList.add("animateIn");
   starryNightText.classList.remove("animateOut");
   starryNightText.classList.add("animateIn");
+  sound1.play();
 });
 
 starryNightSmall.addEventListener("mouseleave", function () {
@@ -43,6 +48,7 @@ birthOfVenusSmall.addEventListener("mouseover", function () {
   birthOfVenusBig.classList.add("animateIn");
   birthOfVenusText.classList.remove("animateOut");
   birthOfVenusText.classList.add("animateIn");
+  sound2.play();
 });
 
 birthOfVenusSmall.addEventListener("mouseleave", function () {
@@ -62,6 +68,7 @@ guernicaSmall.addEventListener("mouseover", function () {
   guernicaBig.classList.add("animateIn");
   guernicaText.classList.remove("animateOut");
   guernicaText.classList.add("animateIn");
+  sound3.play();
 });
 
 guernicaSmall.addEventListener("mouseleave", function () {
@@ -81,6 +88,7 @@ theKissSmall.addEventListener("mouseover", function () {
   theKissBig.classList.add("animateIn");
   theKissText.classList.remove("animateOut");
   theKissText.classList.add("animateIn");
+  sound4.play();
 });
 
 theKissSmall.addEventListener("mouseleave", function () {
